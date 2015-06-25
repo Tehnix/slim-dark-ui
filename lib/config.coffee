@@ -12,17 +12,17 @@ module.exports =
       else if currentFontSize is 'Auto'
         root.style.fontSize = ''
 
-    atom.config.onDidChange 'one-dark-ui.fontSize', ->
-      setFontSize(atom.config.get('one-dark-ui.fontSize'))
+    atom.config.onDidChange 'slim-dark-ui.fontSize', ->
+      setFontSize(atom.config.get('slim-dark-ui.fontSize'))
 
-    setFontSize(atom.config.get('one-dark-ui.fontSize'))
+    setFontSize(atom.config.get('slim-dark-ui.fontSize'))
 
 
     # Layout Mode
     setLayoutMode = (layoutMode) ->
-      root.setAttribute('theme-one-dark-ui-layoutmode', layoutMode.toLowerCase())
+      root.setAttribute('theme-slim-dark-ui-layoutmode', layoutMode.toLowerCase())
 
-    atom.config.onDidChange 'one-dark-ui.layoutMode', ->
-      setLayoutMode(atom.config.get('one-dark-ui.layoutMode'))
+    atom.config.onDidChange 'slim-dark-ui.layoutMode', ->
+      setLayoutMode(atom.config.get('slim-dark-ui.layoutMode'))
 
-    setLayoutMode(atom.config.get('one-dark-ui.layoutMode'))
+    setLayoutMode(atom.config.get('slim-dark-ui.layoutMode'))
